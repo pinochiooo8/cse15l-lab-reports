@@ -37,7 +37,7 @@ bash : cd : en-us.txt : Not a directory
 'Lab 1'  lecture1 new1 'newlecture'
 ```
 
-2.(b) using the `ls` command with a path to a directory as an argument.
+2. (b) using the `ls` command with a path to a directory as an argument.
      The working directory was `/home` when the command was run. It will generate a list of files and directories, in this case(Hello.class Hello.java messages README) from the directory `lecture1` which I put as an argument. The output is not an error. 
 
 ```
