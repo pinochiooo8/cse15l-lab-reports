@@ -2,6 +2,7 @@
 
 1. (a) using the `cd` command with no arguments.
     The working directory was `/home` when the command was run. I don't get any output because the `cd` command successfully runs, no arguments means that the `cd` command will take me back to the `home` directory. The output is not an error.
+   
 ```
 [user@sahara ~]$ cd
 [user@sahara ~]$ pwd
@@ -11,6 +12,7 @@
     (b)  using the `cd` command with a path to a directory as an argument.
     The working directory was `/home/lecture1` when the command was run. I don't get any output because the `cd` command successfully runs, it changes the working directory from
    `/home` to `/home/lecture1`. The output is not an error. 
+   
 ```
 [user@sahara ~]$ pwd
 /home
@@ -65,6 +67,7 @@ test
 
     (b) using the `cat` command with a path to a directory as an argument.
     The working directory was `/home` when the command was run. For the output, it seems that the `cat` command only accepts file or blank as an argument, it does not support directory as an argument. The output is not an error. 
+    
 ```
 [user@sahara ~]$ cat lecture1
 cat: lecture1 : Is a directory
