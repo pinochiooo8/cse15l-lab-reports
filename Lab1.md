@@ -30,7 +30,7 @@ bash : cd : en-us.txt : Not a directory
 ```
 
 2. (a) using the `ls` command with no arguments.
-    The working directory was `/home` when the command was run. It will generate a list of files and directories from the current working directory, so there is 'Lab 1'  lecture1 new1 'newlecture' in the `home` directory. The output is not an error.
+    The working directory was `/home` when the command was run. It will generate a list of files and directories from the current working directory, so there is `'Lab 1'  lecture1 new1 'newlecture' `in the `home` directory. The output is not an error.
 
 ```
 [user@sahara ~]$ ls
