@@ -1,6 +1,6 @@
 # Lab Report 1
  
-**1**using the `cd` command with no arguments.
+**1** using the `cd` command with no arguments.
     The working directory was `/home` when the command was run. I don't get any output because the `cd` command successfully runs, no arguments means that the `cd` command will take me back to the `home` directory. The output is not an error.
    
 ```
