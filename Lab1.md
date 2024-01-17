@@ -8,8 +8,7 @@
 [user@sahara ~]$ pwd
 /home
 ```
-
-    (b)  using the `cd` command with a path to a directory as an argument.
+1.(b)  using the `cd` command with a path to a directory as an argument.
     The working directory was `/home/lecture1` when the command was run. I don't get any output because the `cd` command successfully runs, it changes the working directory from
    `/home` to `/home/lecture1`. The output is not an error. 
    
@@ -21,7 +20,7 @@
 /home/lecture1
 ```
 
-    (c)  using the `cd` command with a path to a file as an argument.
+1.(c)  using the `cd` command with a path to a file as an argument.
    The working directory was `/lecture1/messages` when the command was run. I get the message Not a directory because the cd command can only be used on a directory, not a file. The output is not an error, because it is supposed to generate an error message since the `cd` command doesn't support the file as an argument. 
 
 ```
@@ -39,7 +38,7 @@ bash : cd : en-us.txt : Not a directory
 'Lab 1'  lecture1 new1 'newlecture'
 ```
 
-    (b) using the `ls` command with a path to a directory as an argument.
+2.(b) using the `ls` command with a path to a directory as an argument.
      The working directory was `/home` when the command was run. It will generate a list of files and directories, in this case(Hello.class Hello.java messages README) from the directory `lecture1` which I put as an argument. The output is not an error. 
 
 ```
@@ -47,7 +46,7 @@ bash : cd : en-us.txt : Not a directory
 Hello.class Hello.java messages README
 ```
 
-    (c) using the `ls` command with a path to a file as an argument.
+2.(c) using the `ls` command with a path to a file as an argument.
      The working directory was `/home/lecture1/messages` when the command was run. Instead of generating a list, when we using the file as an argument, the `ls` command will check the existence of the file name in that specific directory. In this case, there does exist a file name `en-us.txt` in the `/lecture1/messages` directory. The output is not an error. 
 ```
 [user@sahara ~]$ cd lecture 1
@@ -65,7 +64,7 @@ test
 test
 ```
 
-    (b) using the `cat` command with a path to a directory as an argument.
+3.(b) using the `cat` command with a path to a directory as an argument.
     The working directory was `/home` when the command was run. For the output, it seems that the `cat` command only accepts file or blank as an argument, it does not support directory as an argument. The output is not an error. 
     
 ```
@@ -73,7 +72,7 @@ test
 cat: lecture1 : Is a directory
 ```
 
-    (c)  using the `cat` command with a path to a file as an argument.
+3.(c)  using the `cat` command with a path to a file as an argument.
     The working directory was `/lecture1/messages` when the command was run. For the output, it prints out the content of the file `en-us.txt`, Hello World!. The output is not an error. 
  ```
 [user@sahara ~]$ cd lecture 1
