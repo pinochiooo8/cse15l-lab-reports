@@ -48,6 +48,8 @@ a) For the input /add-message?s=Hello&user=jpolitz
     The output is shown below. 
     ![Image](578c86c83669ce4fbf431e953c14281.png)
 I called the **Main, handleRequest, pareQuery** method, for the **Main** method, *String[] args*  which is the command-line argument, and the relevant field *chatHistory* has no change. For the  **handleRequest** method, the relevant argument is *String query*, and it changes when it's appending new messages, for this input, it changes to "jpolitz: Hello\n". For the **pareQuery** method, the relevant argument is *String query*, for this input the argument is "s=Hello&user=jpolitz". 
-    
 
+b) For the input /add-message?s=How are you&user=yash
+    The output is shown below.
+     ![Image]()
     
