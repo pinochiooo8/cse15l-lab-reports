@@ -9,16 +9,12 @@ import java.io.IOException;
 import java.net.URI;
 
 public class ChatServer implements URLHandler {
-
     private StringBuilder chatHistory = new StringBuilder();
-
     public static void main(String[] args) throws IOException {
         int port = 8000; 
         ChatServer chatServer = new ChatServer();
         Server.start(port, chatServer);
     }
-
-    @Override
     public String handleRequest(URI url) {
         if ("/add-message".equals(url.getPath())) {
             String[] params = parseQuery(url.getQuery());
@@ -29,9 +25,7 @@ public class ChatServer implements URLHandler {
             return chatHistory.toString();
         }
         return "Invalid request";
-    }
-
-   
+    }  
     private String[] parseQuery(String query) {
         String[] params = new String[2]; 
         if (query != null) {
@@ -63,4 +57,11 @@ The terminal interaction when I log into myieng6 account.
 ![Image](7dcb01adaed0eb016cdadad44968682.png)
 
 The absolute path to the private key and public key  for my SSh key. 
+![Image](b8c70fc5bdbc4b21ac96e60cbe8930f.png)
+The id_rsa is the private key and the id_rsa.pub is the public key. 
 
+
+## Part 3 
+
+
+In week 2 or 3 of the lab, I learned about the setup and use of SSH (Secure Shell) keys. This included generating a key pair, understanding the difference between the private and public keys, and how to use them for secure, password-less authentication to remote servers. Additionally, I was introduced to essential Unix commands like mkdir for creating directories, and ssh and scp for securely accessing and transferring files between local and remote systems. 
