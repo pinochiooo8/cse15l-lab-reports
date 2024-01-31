@@ -47,9 +47,16 @@ public class ChatServer implements URLHandler {
 a) For the input /add-message?s=Hello&user=jpolitz
     The output is shown below. 
     ![Image](578c86c83669ce4fbf431e953c14281.png)
-I called the **Main, handleRequest, pareQuery** method, for the **Main** method, *String[] args*  which is the command-line argument, and the relevant field *chatHistory* has no change. For the  **handleRequest** method, the relevant argument is *String query*, and it changes when it's appending new messages, for this input, it changes to "jpolitz: Hello\n". For the **pareQuery** method, the relevant argument is *String query*, for this input the argument is "s=Hello&user=jpolitz". 
+The **Main, handleRequest, pareQuery** methods were called, for the **Main** method, *String[] args*  which is the command-line argument, and the relevant field *chatHistory* has no change. 
+For the  **handleRequest** method, the relevant argument is *String query*, and the filed *chatHistory* changes when it's appending new messages, for this input, it changes to "jpolitz: Hello\n". 
+For the **pareQuery** method, the relevant argument is *String query*, for this input the argument is "s=Hello&user=jpolitz". 
 
 b) For the input /add-message?s=How are you&user=yash
     The output is shown below.
-     ![Image]()
+     ![Image](12c7431f5e47b71bef8f018790b2e19.png)
+The **handleRequest, pareQuery** methods were called, for the **handleRequest** method, the relevant argument is *URI url*, which is ("/add-message?s=How are you&user=yash"), and the relevant field *chatHistory* changes from *"jpolitz: Hello\n"* to *"jpolitz: Hello\nyash: How are you\n"*.  
+For the **pareQuery** method, the relevant argument is *String query*, for this input the argument is "s=How are you&user=yash". 
+
+## Part 2 
+
     
