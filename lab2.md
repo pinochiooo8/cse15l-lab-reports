@@ -41,8 +41,8 @@ public class ChatServer implements URLHandler {
         }
         return params;
     }
-}```
-
+}
+```
 
 a) For the input /add-message?s=Hello&user=jpolitz
     The output is shown below 
