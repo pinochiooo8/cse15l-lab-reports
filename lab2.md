@@ -59,4 +59,8 @@ For the **pareQuery** method, the relevant argument is *String query*, for this 
 
 ## Part 2 
 
-    
+The terminal interaction when I log into myieng6 account.
+![Image](7dcb01adaed0eb016cdadad44968682.png)
+
+The absolute path to the private key and public key  for my SSh key. 
+
