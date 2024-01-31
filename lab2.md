@@ -7,45 +7,43 @@ The code of ChatServer is shown below
 ```
 import java.io.IOException;
 import java.net.URI;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ChatServer implements URLHandler {
 
     private StringBuilder chatHistory = new StringBuilder();
 
     public static void main(String[] args) throws IOException {
-        int port = 8001;
+        int port = 8000; 
         ChatServer chatServer = new ChatServer();
         Server.start(port, chatServer);
     }
 
     @Override
     public String handleRequest(URI url) {
-    if ("/add-message".equals(url.getPath())) {
-        Map<String, String> queryPairs = parseQuery(url.getQuery());
-        String user = queryPairs.getOrDefault("user", "Unknown");
-        String message = queryPairs.getOrDefault("s", "");
+        if ("/add-message".equals(url.getPath())) {
+            String[] params = parseQuery(url.getQuery());
+            String message = params[0];
+            String user = params[1];
 
-        chatHistory.append(user).append(": ").append(message).append("\n");
-        return "<pre>" + chatHistory.toString() + "</pre>";
-    }
-
+            chatHistory.append(user).append(": ").append(message).append("\n");
+            return chatHistory.toString();
+        }
         return "Invalid request";
     }
-    private Map<String, String> parseQuery(String query) {
-        Map<String, String> queryPairs = new HashMap<>();
+
+   
+    private String[] parseQuery(String query) {
+        String[] params = new String[2]; 
         if (query != null) {
-            String[] pairs = query.split("&");
-            for (String pair : pairs) {
-                int idx = pair.indexOf("=");
-                String key = idx > 0 ? pair.substring(0, idx) : pair;
-                String value = idx > 0 && pair.length() > idx + 1 ? pair.substring(idx + 1)                  : null;
-                queryPairs.put(key, value);
-            }
+            String[] parts = query.split("&");
+            params[0] = parts[0].substring(parts[0].indexOf('=') + 1);
+            params[1] = parts[1].substring(parts[1].indexOf('=') + 1);
         }
-        return queryPairs;
+        return params;
     }
-    
 }
 ```
+    a) For the input /add-message?s=Hello&user=jpolitz
+    The output is shown below ![578c86c83669ce4fbf431e953c14281](https://github.com/pinochiooo8/cse15l-lab-reports/assets/121822382/fde62503-69f0-47a7-a2be-cec37878f451)
+
+    
