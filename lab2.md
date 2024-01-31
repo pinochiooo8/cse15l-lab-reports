@@ -42,9 +42,9 @@ public class ChatServer implements URLHandler {
         return params;
     }
 }
-```
 
-    a) For the input /add-message?s=Hello&user=jpolitz
+
+a) For the input /add-message?s=Hello&user=jpolitz
     The output is shown below 
     ![Image](578c86c83669ce4fbf431e953c14281.png)
 
