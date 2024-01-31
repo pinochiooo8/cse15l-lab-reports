@@ -44,6 +44,7 @@ public class ChatServer implements URLHandler {
 }
 ```
     a) For the input /add-message?s=Hello&user=jpolitz
-    The output is shown below ![578c86c83669ce4fbf431e953c14281](https://github.com/pinochiooo8/cse15l-lab-reports/assets/121822382/fde62503-69f0-47a7-a2be-cec37878f451)
+    The output is shown below 
+    ![Image]
 
     
