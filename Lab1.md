@@ -21,7 +21,7 @@
 ```
 
 **3** using the `cd` command with a path to a file as an argument.
-   The working directory was `/lecture1/messages` when the command was run. I get the message Not a directory because the cd command can only be used on a directory, not a file. The output is not an error, because it is supposed to generate an error message since the `cd` command doesn't support the file as an argument. 
+   The working directory was `/lecture1/messages` when the command was run. I get the message Not a directory because the cd command can only be used on a directory, not a file. The output is an error with an explanation (Not a directory) because the `cd` command doesn't support the file type as an argument. 
 
 ```
 [user@sahara ~]$ cd lecture 1
@@ -65,7 +65,7 @@ test
 ```
 
 **8**  using the `cat` command with a path to a directory as an argument.
-    The working directory was `/home` when the command was run. For the output, it seems that the `cat` command only accepts file or blank as an argument, it does not support directory as an argument. The output is not an error. 
+    The working directory was `/home` when the command was run. For the output, it seems that the `cat` command only accepts file or blank as an argument, it does not support directory as an argument. The output is an error with an explanation (lecture1: Is a directory) because it only accepts a file or blank as an argument. 
     
 ```
 [user@sahara ~]$ cat lecture1
