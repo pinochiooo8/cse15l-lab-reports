@@ -40,7 +40,7 @@
   ![Image](step9-1.png)
 ## Summary 
 
- ### Commands: 
+### Commands: 
    1. git clone: Clone my fork of the repository from my GitHub account.
    2. ls: show the list of files under the current directory.
    3. vim: to open the vim editor.
@@ -49,8 +49,8 @@
    6. git commit: records changes to the repository, capturing the current state of the tracked files.
    7. git add: stages changes in files to be included in the next commit, allowing you to select specific modifications to commit.
    8. git push: push my commits to the remote repository associated with my current branch.
-      
- ### Keypresses:
+
+### Keypresses:
    1. <command+C>,<command+v> : copy and paste.
    2. <SHIFT + G>: Under Vim, Move to the bottom of the file.
    3. <control + A>: Under Vim, Move to the start of the line
