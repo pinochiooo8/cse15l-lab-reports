@@ -8,6 +8,7 @@
 
 ## 4. Log into ieng6
   Enter the ssh rucao@ieng6.ucsd.edu in the terminal to log into ieng6 and press <enter>
+  
   ![Image](step4.png)
 
 ## 5. Clone your fork of the repository from your GitHub account (using the SSH URL)
@@ -17,17 +18,20 @@
 ## 6. Run the tests, demonstrating that they fail
   Type in <ls><enter> to see the list of files under the repository, and type <cat test.sh> to view the content file. <command+C> to copy the javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java command, 
   <command+v> to paste command and hit <enter>. <command+C> to copy thejava -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ... command and  <command+v> to paste the command and hit <enter>. 
+  
   ![Image](step6.png)
 
 ## 7. Edit the code file to fix the failing test
   Type in vim ListExample.java to edit the file. 
   Press <SHIFT + G> to Move me to the bottom of the file, Press<k><k><k><k><k><k> move me to the line that needs to be edited, <control + A> gets me to the start of the line, press <dw> to delete the integer 1, press <i> <2> <space>to 
   add an integer 2 and hit <esc> to quit the insert mode. press <:wq> to save and exit vim. 
+  
   ![Image](step7.png)
 
 ## 8. Run the tests, demonstrating that they now succeed
   Keys pressed: <up><up><up><enter>, <up><up><enter> The javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java command was 3 up in the search history, so I used up arrow to access it. 
   Then the java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ... command was 2 up in the history, so I accessed and ran it in the same way.
+  
   ![Image](step8.png)
 
 ## 9. Commit and push the resulting change to your GitHub account (you can pick any commit message!)
