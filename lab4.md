@@ -50,7 +50,7 @@
    1. <command+C>,<command+v> : copy and paste.
    2. <SHIFT + G>: Under Vim, Move to the bottom of the file.
    3. <control + A>: Under Vim, Move to the start of the line
-   4. <dw> : under vim, delete.
-   5. <i> : under vim, insert.
+   4. <dw>: under vim, delete.
+   5. <i>: under vim, insert.
    6. <:wq>: under vim, save and exit vim.
    7. <esc>: under vim, in this particular lab the function is to exit the insert mode. 
