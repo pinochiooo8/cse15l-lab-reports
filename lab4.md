@@ -7,7 +7,7 @@
 ## 3. The real deal Start the timer!
 
 ## 4. Log into ieng6
-  Enter the ssh rucao@ieng6.ucsd.edu in the terminal to log into ieng6 and press <enter>
+  Enter the code 'ssh rucao@ieng6.ucsd.edu' in the terminal to log into ieng6 and press <enter>
   
   ![Image](step4.png)
 
