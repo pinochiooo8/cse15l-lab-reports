@@ -52,7 +52,8 @@
    7. git add: stages changes in files to be included in the next commit, allowing you to select specific modifications to commit.
    8. git push: push my commits to the remote repository associated with my current branch.
 
-### Keypresses:
+### Keypresses
+
   ### Step 1-3
   
   ### Step 4 
@@ -64,7 +65,7 @@
   ### Step 6 
   Press `ls` to view the list of files under lab7, and type in `cat test.sh + enter` to view the contents of the file named test.sh on the terminal screen. Use `ctrl +c` to copy and `ctrl + v` to paste the command `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java + enter`  and `to compile all Java source files in the current directory.  Use `ctrl +c` to copy and `ctrl + v` to paste the command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ... + enter` to execute JUnit tests from the command line.
   
-  ### Step 7: 
+  ### Step 7 
   Press `vim ListExample.java` to open the ListExample.java file in Vim, a configurable text editor. Now in the Vim editor, press `SHIFT + G` to Move to the bottom line of the ListExample.java, then press `k` five times, `k` is used to move the cursor up one line, in this case, press `k` five times move me 5 lines upper to get to the line needs to be edited. Then press `control + A` to move to the start of the line, and press `dw` to delete the word which is **1** currently under the cursor, up to the beginning of the next word. Press `<i> <2> <space>` here, command `i` switch the mode to insert mode, `2` inserts an inter 2 at the current cursor location, and the `space` button inserts a space character at the current cursor location. press `ESC` to quit the insert mode. At the end, press `:wq` to save and exit the vim editor. 
   
   ### Step 8 
