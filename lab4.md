@@ -7,30 +7,32 @@
 ## 3. The real deal Start the timer!
 
 ## 4. Log into ieng6
-  Enter the code 'ssh rucao@ieng6.ucsd.edu' in the terminal to log into ieng6 and press <enter>
+  Enter the code `ssh rucao@ieng6.ucsd.edu` in the terminal to log into ieng6 and press <enter>
   
   ![Image](step4.png)
 
 ## 5. Clone your fork of the repository from your GitHub account (using the SSH URL)
   Copy and paste the SSH URL from my GitHub account. 
+  Keystrokes using  : left click copy button here, and go to terminal in vs code press `ctrl + v enter`.
+  ![Image](pp.png)
   ![Image](step5.png)
   
 ## 6. Run the tests, demonstrating that they fail
-  Type in <ls><enter> to see the list of files under the repository, and type <cat test.sh> to view the content file. <command+C> to copy the javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java command, 
-  <command+v> to paste command and hit <enter>. <command+C> to copy thejava -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ... command and  <command+v> to paste the command and hit <enter>. 
+  Type in `<ls><enter>` to see the list of files under the repository, and type `<cat test.sh>` to view the content file. `<command+C>` to copy the `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` command, 
+  `<command+v>` to paste command and hit `<enter>`. `<command+C>` to copy the `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ...` command and  `<command+v>` to paste the command and hit `<enter>`. 
   
   ![Image](step6.png)
 
 ## 7. Edit the code file to fix the failing test
-  Type in vim ListExample.java to edit the file. 
-  Press <SHIFT + G> to Move me to the bottom of the file, Press<k><k><k><k><k><k> move me to the line that needs to be edited, <control + A> gets me to the start of the line, press <dw> to delete the integer 1, press <i> <2> <space>to 
-  add an integer 2 and hit <esc> to quit the insert mode. press <:wq> to save and exit vim. 
+  Type in `vim ListExample.java` to edit the file. 
+  Press `<SHIFT + G>` to Move me to the bottom of the file, Press`<k><k><k><k><k><k>` move me to the line that needs to be edited, `<control + A>` gets me to the start of the line, press `<dw>` to delete the integer 1, press `<i> <2> <space>`to 
+  add an integer 2 and hit `<esc>` to quit the insert mode. press `<:wq>` to save and exit vim. 
   
   ![Image](step7.png)
 
 ## 8. Run the tests, demonstrating that they now succeed
-  Keys pressed: <up><up><up><enter>, <up><up><enter> The javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java command was 3 up in the search history, so I used up arrow to access it. 
-  Then the java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ... command was 2 up in the history, so I accessed and ran it in the same way.
+  Keys pressed: `<up><up><up><enter>`, `<up><up><enter>` The `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` command was 3 up in the search history, so I used up arrow to access it. 
+  Then the `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ...` command was 2 up in the history, so I accessed and ran it in the same way.
   
   ![Image](step8.png)
 
@@ -51,10 +53,17 @@
    8. git push: push my commits to the remote repository associated with my current branch.
 
 ### Keypresses:
+  #### Step 1-3: 
+  #### Step 4: `ssh rucao@ieng6.ucsd.edu` and hit `enter`, `ssh`  initiates a secure connection to the server ieng6, rucao is my username for ieng6.
+  #### Step 5: Copy the SSH URL on GitHub press `git clone + ctrl + v`  and press `enter` in the vs code terminal, Git will start the cloning process, creating a local directory named after the lab7, the `ctrl + v` will paste the ssh from Github.
+  #### Step 6: Press `ls` to view the list of files under lab7, and type in `cat test.sh + enter` to view the  contents of the file named test.sh on the terminal screen. Use `ctrl +c` to copy and `ctrl + v` to paste the command `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java + enter`  and `to compile all Java source files in the current directory.  Use `ctrl +c` to copy and `ctrl + v` to paste the command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ... + enter` to execute JUnit tests from the command line.
+  #### Step 7: Press `vim ListExample.java` to open the ListExample.java file in Vim, a configurable text editor. Now in Vim editor, press `SHIFT + G` to Move to the bottom line of the ListExample.java, 
+  
+
    1. <command+C>,<command+v> : copy and paste.
    2. <SHIFT + G>: Under Vim, Move to the bottom of the file.
    3. <control + A>: Under Vim, Move to the start of the line
    4. dw: under vim, delete.
    5. i: under vim, insert.
    6. <:wq>: under vim, save and exit vim.
-   7. esc: under vim, in this particular lab the function is to exit the insert mode. 
+   7. esc: Under Vim, in this particular lab the function is to exit the insert mode. 
